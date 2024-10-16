@@ -5,6 +5,12 @@ VisualStudioVersion = 17.12.35323.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Puzzle-53", "Puzzle-53\Puzzle-53.csproj", "{F9CD0007-9BC0-4C9C-AB81-4D56D40F10EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{2E53991C-29C7-4253-BFE4-FEBE72F1B4BF}"
+	ProjectSection(SolutionItems) = preProject
+		ExceptionScreenshot.png = ExceptionScreenshot.png
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
