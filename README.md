@@ -1,4 +1,12 @@
-# Puzzle-53 - Navigation Problems
+# Blazor Puzzle #53
+
+## Navigation Problems
+
+YouTube Video: https://youtu.be/O00Il7VlJGg
+
+Blazor Puzzle Home Page: https://blazorpuzzle.com
+
+### The Challenge:
 
 In this week's Blazor Puzzle we're having a problem with navigation from the home page.  This is a Blazor Global Server Interactive application.
 
