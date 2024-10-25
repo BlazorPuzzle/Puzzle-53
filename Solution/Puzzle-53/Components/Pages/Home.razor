@@ -1,0 +1,37 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+
+<PageTitle>Home</PageTitle>
+
+<h1>Puzzle 53 - Navigation Problems</h1>
+
+<p>In this week's Blazor Puzzle we're having a problem with navigation from the home page.</p>
+<p>
+	The scenario is this: for visitors who come to the home page from a campaign specified by a campaign query string parameter, we want to automatically route them to another page that has additional information about the marketing campaign that they're participating in.
+	You might see this type of interaction for marketing websites.
+</p>
+<p>
+	Our problem is when a campaign is specified the navigation manager throws an exception.  Try this link to see
+	the failing error: <a target="_blank" href="/?campaign=123">Home with campaign</a>
+</p>
+	<p>
+	Can you help us identify why the error is occurring and how to fix it?
+</p>
+
+@code {
+
+	[Parameter, SupplyParameterFromQuery(Name = "campaign")]
+	public string Campaign { get; set; }
+
+
+	protected override void OnInitialized()
+	{
+		Console.WriteLine("Home page initialized");
+
+		if (!string.IsNullOrEmpty(Campaign))
+		{
+			Console.WriteLine($"Campaign: {Campaign}");
+			NavigationManager.NavigateTo("/campaign");
+		}
+	}
+}
